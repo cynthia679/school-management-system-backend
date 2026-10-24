@@ -1,0 +1,7 @@
+package com.example.schoolmanagement.student;
+
+public class StudentNotFoundException extends RuntimeException {
+    public StudentNotFoundException(Long id) {
+        super("Student with ID " + id + " was not found.");
+    }
+}
